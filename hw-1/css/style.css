@@ -4,22 +4,32 @@
   text-transform: uppercase;
 }
 .normal {
-  font: Arial 14px black;
+  font: 14px Arial black;
   text-align: left;
 }
 .wrapper {
   border-bottom: 1px solid gray;
 }
-  .total_sheet {
+.total_sheet {
   margin: 50px 260px 50px 260px;
-  }
+}
 .bold {
-  font:bold 18px Myriad Pro black;
+  font:bold 18px MyriadProRegular black;
 }
 .normal1 {
-  font: Myriad Pro 14px;
+  font: 14px MyriadProRegular black;
   margin-left: 38px;
+  margin-bottom: 10px;
 }
 .photo {
   text-align: center;
+}
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
