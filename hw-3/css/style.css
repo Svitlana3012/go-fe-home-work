@@ -39,7 +39,10 @@ main {
 }
 .menu a {
   display: block;
-  padding: 10px 25px;
+  padding-left: 25px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: white;
   text-decoration: none;
 }
@@ -93,4 +96,29 @@ border-right: 1px solid white;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 40px;
+}
+.menu_down li {
+  float: left;
+  list-style: none;
+}
+.menu_down li:last-child {
+  float: right;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+.menu_down a {
+  display: block;
+  padding-left: 25px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: black;
+}
+.menu_down {
+  background-color: #e1e1e1;
+}
+.menu_down a:hover {
+text-decoration: underline;
 }
