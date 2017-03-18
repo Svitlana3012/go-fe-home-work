@@ -53,8 +53,7 @@ padding: 10px;
   color: #128aa7;
 }
 .countries li {
-  float: left;
-  min-width: 65px;
+  max-width: 60px;
   font-size: 10px;
 }
 .countries a {
@@ -62,6 +61,12 @@ padding: 10px;
   vertical-align: top;
   text-align: center;
   color: #128aa7;
+}
+.countries {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  list-style: none;
 }
 .main-img {
   width: 100%;
