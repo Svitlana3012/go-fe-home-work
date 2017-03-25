@@ -14,7 +14,7 @@ header {
   background-color: #085292;
 }
 main {
-  height: 100%;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +81,12 @@ form {
   width: 300px;
   line-height: 20px;
 }
-button {
-  width: 50%;
-  padding: 5px;
+.facebook-btn {
+  display: block;
+  height: 40px;
+  width: 300px;
   margin: 30px;
+  padding: 0;
   border-top: 2px solid #778ab5;
   border-bottom: none;
   border-right: none;
@@ -95,22 +97,23 @@ button {
   font-size: 16px;
 }
 .fb {
-  float: left;
-  padding: 1px 10px 1px 10px;
+  display: inline-block;
+  padding: 0 10px;
   font-size: 20px;
-  border-right-width: 3px;
-  border-right-color: #1f49a9;
-  border-right-style: groove;
+  text-align: center;
 }
-button:afer {
+.fb::after {
   display: inline-block;
   content: "";
-  border-right-width: 3px;
-  border-right-color: #1f49a9;
-  border-right-style: groove;
+  width: 2px;
+  height: 40px;
+  background-color: #344066;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 .bold {
   font-weight: bold;
+  text-align: center;
 }
 fieldset {
   width: 50%;
