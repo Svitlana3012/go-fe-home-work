@@ -43,19 +43,19 @@ main {
 .menu2 a {
   color: white;
 }
-.ofertas {
-  padding: 10px;
-  text-decoration: none;
-}
+.ofertas,
 .ola {
   padding: 10px;
+}
+.no_line {
+  text-decoration: none;
 }
 .ofertas:hover,
 .ola:hover,
 .menu li:hover {
 background-color: #4eabda;
 }
-.menu a:hover {
+.menu li:hover a {
   color: white;
 }
 .registr {
@@ -73,7 +73,7 @@ background-color: #4eabda;
   font-size: 24px;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   height: 30px;
   border-bottom: 1px solid white;
 }
