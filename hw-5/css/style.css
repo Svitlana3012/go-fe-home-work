@@ -47,9 +47,6 @@ main {
 .ola {
   padding: 10px;
 }
-.no_line {
-  text-decoration: none;
-}
 .ofertas:hover,
 .ola:hover,
 .menu li:hover {
