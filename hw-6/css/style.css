@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'lucida_sans_unicoderegular';
-    src: url('lsansuni-webfont.woff2') format('woff2'),
-         url('lsansuni-webfont.woff') format('woff');
+    src: url('../fonts/lsansuni-webfont.woff2') format('woff2'),
+         url('../fonts/lsansuni-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -148,12 +148,12 @@ input {
   display: flex;
 }
 .side_bar {
-  width: 183px;
+  width: 188px;
 }
 .side_bar_title {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:flex-start;
   border: 1px solid #8b979c;
   border-radius: 20px;
   box-shadow: 2px 2px 5px .5px #8b979c;
@@ -164,6 +164,7 @@ input {
 .title {
   text-transform: uppercase;
   font-size: 13px;
+  margin: 6px;
 }
 .side_bar_catalog {
   display: inline-block;
@@ -189,23 +190,38 @@ label {
 input[type=radio] {
   display: none;
 }
-label::before {
+label round::before {
   content: "";
   display: inline-block;
   width: 7px;
   height: 7px;
   margin-right: 3px;
+  bottom: 3px;
   left: 0;
-  bottom: 0;
   position: absolute;
   background-color: white;
-  border-width: 1px;
-  border-color: #79878d;
+  border: 1px solid #79878d;
   border-radius: 3px;
 }
-input[type=radio]:checked + label::before {
-  content: "\0200"
-  border: 1px #313a55;
+input[type=radio]:checked + label round::before {
+  border: 1px solid #313a55;
+  border-radius: 3px;
+}
+label square::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 3px;
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #79878d;
+  border-radius: 3px;
+}
+input[type=radio]:checked + label square::before {
+  border: 1px solid #313a55;
   border-radius: 3px;
 }
 label:hover {
@@ -220,9 +236,12 @@ label:hover {
   display: flex;
   justify-content: space-around;
   align-items: stretch;
+  flex-wrap: wrap;
   height: 627px;
   width: 527px;
+  padding: 15px;
   background: linear-gradient(#e4e7e8, #93a7b0);
+  margin: 15px 10px;
 }
 .item {
   display: flex;
@@ -232,9 +251,26 @@ label:hover {
 .goodyear {
   height: 127px;
   width: 138px;
-  background: url("..img/sprite-tires.png") 0 0 no-repeat;
+  background: url("../img/sprite-tires.png") 0 0 no-repeat;
   border: 1px solid #b0b9bc;
   border-radius: 10px;
+  background-color: white;
+  }
+ .nokian {
+    height: 127px;
+    width: 138px;
+    background: url("../img/sprite-tires.png") -172px 0 no-repeat;
+    border: 1px solid #b0b9bc;
+    border-radius: 10px;
+    background-color: white;
+  }
+ .hankook {
+    height: 127px;
+    width: 138px;
+    background: url("../img/sprite-tires.png") -335px 0 no-repeat;
+    border: 1px solid #b0b9bc;
+    border-radius: 10px;
+    background-color: white;
   }
   .tire-name {
     color: #206988;
@@ -250,4 +286,5 @@ label:hover {
     font-style: italic;
     font-weight: bold;
     font-size: 16px;
+    padding: 5px;
   }
