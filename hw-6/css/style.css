@@ -32,6 +32,7 @@ footer {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  width: 300px;
 }
 .round {
   height: 21px;
@@ -47,7 +48,7 @@ footer {
 }
 .bigfigures {
   text-decoration: none;
-  font: Arial;
+  font-family: Arial;
   font-size: 18px;
   color: #5e696d;
 }
@@ -55,7 +56,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
   background: linear-gradient(#1e6584, #0c3357);
   box-shadow: 2px 2px 5px;
   border-radius: 5px;
@@ -69,11 +69,15 @@ input {
 }
 .registration a {
   font-size: 11px;
+}
+.entry {
   color: white;
   text-decoration: none;
 }
 .separator {
   border-left: 1px solid white;
+  color: white;
+  text-decoration: none;
 }
 .forget {
   color: #bfbfbf;
@@ -167,8 +171,8 @@ input {
   margin: 6px;
 }
 .side_bar_catalog {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   border: 1px solid #8b979c;
   border-radius: 20px;
   width: 148px;
@@ -176,6 +180,9 @@ input {
   padding: 4px;
   font-size: 14px;
   color: #79878d;
+}
+.side_bar_catalog_item {
+  padding-left: 4px;
 }
 label {
   display: inline-block;
@@ -190,7 +197,7 @@ label {
 input[type=radio] {
   display: none;
 }
-label round::before {
+.circle::before {
   content: "";
   display: inline-block;
   width: 7px;
@@ -203,26 +210,25 @@ label round::before {
   border: 1px solid #79878d;
   border-radius: 3px;
 }
-input[type=radio]:checked + label round::before {
+input[type=radio]:checked + .circle::before {
   border: 1px solid #313a55;
   border-radius: 3px;
 }
-label square::before {
+.square::before {
   content: "";
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   margin-right: 3px;
   bottom: 3px;
   left: 0;
   position: absolute;
   background-color: white;
   border: 1px solid #79878d;
-  border-radius: 3px;
 }
-input[type=radio]:checked + label square::before {
+input[type=radio]:checked + .square::before {
   border: 1px solid #313a55;
-  border-radius: 3px;
+  box-shadow: inset 0 1px #313a55;
 }
 label:hover {
   font-size: 14px;
